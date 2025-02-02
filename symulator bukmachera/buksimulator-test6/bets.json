@@ -1,0 +1,34 @@
+[
+    {
+        "id": "0aea4e3c-c001-4ae9-a252-081cb1351dca",
+        "bets": [
+            [
+                3.18,
+                "Dru\u017cyna E",
+                "Dru\u017cyna H",
+                "Dru\u017cyna E"
+            ]
+        ],
+        "user": "123",
+        "amount": 5.0,
+        "total_odds": 3.18,
+        "potential_win": 15.9,
+        "status": "active"
+    },
+    {
+        "id": "83f5c96e-07ac-4598-9921-6eb680d3c1d1",
+        "bets": [
+            [
+                3.14,
+                "Dru\u017cyna C",
+                "Dru\u017cyna N",
+                "Dru\u017cyna C"
+            ]
+        ],
+        "user": "123",
+        "amount": 5.0,
+        "total_odds": 3.14,
+        "potential_win": 15.7,
+        "status": "active"
+    }
+]

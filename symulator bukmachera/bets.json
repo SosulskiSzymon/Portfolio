@@ -1,0 +1,134 @@
+[
+    {
+        "id": "0aea4e3c-c001-4ae9-a252-081cb1351dca",
+        "bets": [
+            [
+                3.18,
+                "Dru\u017cyna E",
+                "Dru\u017cyna H",
+                "Dru\u017cyna E"
+            ]
+        ],
+        "user": "123",
+        "amount": 5.0,
+        "total_odds": 3.18,
+        "potential_win": 15.9,
+        "status": "active"
+    },
+    {
+        "id": "83f5c96e-07ac-4598-9921-6eb680d3c1d1",
+        "bets": [
+            [
+                3.14,
+                "Dru\u017cyna C",
+                "Dru\u017cyna N",
+                "Dru\u017cyna C"
+            ]
+        ],
+        "user": "123",
+        "amount": 5.0,
+        "total_odds": 3.14,
+        "potential_win": 15.7,
+        "status": "active"
+    },
+    {
+        "id": "cdce0867-077b-47fa-ae74-22fa18ed29a6",
+        "bets": [
+            [
+                4.5,
+                "Dru\u017cyna F",
+                "Dru\u017cyna I",
+                "Dru\u017cyna F"
+            ],
+            [
+                1.7,
+                "Dru\u017cyna E",
+                "Dru\u017cyna H",
+                "Dru\u017cyna E"
+            ],
+            [
+                3.95,
+                "Dru\u017cyna M",
+                "Dru\u017cyna G",
+                "Remis"
+            ]
+        ],
+        "user": "123",
+        "amount": 5.0,
+        "total_odds": 30.22,
+        "potential_win": 151.09,
+        "status": "lost"
+    },
+    {
+        "id": "ecab18aa-a923-41b9-bf18-386758ca5092",
+        "bets": [
+            [
+                4.8,
+                "Dru\u017cyna L",
+                "Dru\u017cyna A",
+                "Dru\u017cyna L"
+            ],
+            [
+                3.95,
+                "Dru\u017cyna M",
+                "Dru\u017cyna G",
+                "Remis"
+            ],
+            [
+                2.07,
+                "Dru\u017cyna H",
+                "Dru\u017cyna E",
+                "Dru\u017cyna H"
+            ]
+        ],
+        "user": "123",
+        "amount": 100.0,
+        "total_odds": 39.25,
+        "potential_win": 3924.72,
+        "status": "lost"
+    },
+    {
+        "id": "3501feab-9546-4beb-bd82-981c3f1374fc",
+        "bets": [
+            [
+                1.7,
+                "Dru\u017cyna E",
+                "Dru\u017cyna H",
+                "Dru\u017cyna E"
+            ],
+            [
+                1.49,
+                "Dru\u017cyna L",
+                "Dru\u017cyna A",
+                "Remis"
+            ]
+        ],
+        "user": "123",
+        "amount": 40.0,
+        "total_odds": 2.53,
+        "potential_win": 101.32,
+        "status": "lost"
+    },
+    {
+        "id": "9575d092-479e-47b6-b296-ce1eefe0ce38",
+        "bets": [
+            [
+                1.7,
+                "Dru\u017cyna E",
+                "Dru\u017cyna H",
+                "Dru\u017cyna E"
+            ],
+            [
+                4.8,
+                "Dru\u017cyna L",
+                "Dru\u017cyna A",
+                "Dru\u017cyna L"
+            ]
+        ],
+        "user": "123",
+        "amount": 1000.0,
+        "total_odds": 8.16,
+        "potential_win": 8160.0,
+        "status": "lost"
+    }
+]
