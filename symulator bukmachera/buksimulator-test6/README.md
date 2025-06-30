@@ -1,4 +1,0 @@
-Biblioteki:
--tkinter
--bcrypt
--pillow
