@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Magazyn – Zarządzanie Towarem</title>
+		<script type="module" src="./scripts/data.js" defer></script>
+		<script type="module" src="./scripts/formscript.js" defer></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+		/>
+	</head>
+	<body class="bg-gray-100 text-gray-800 min-h-screen">
+		<!-- Nagłówek -->
+		<header class="bg-blue-700 text-white p-4 shadow">
+			<h1 class="text-2xl font-bold">📦 Magazyn – Zarządzanie Towarem</h1>
+		</header>
+
+		<!-- Główna zawartość -->
+		<main class="max-w-6xl mx-auto p-4">
+			<!-- Panel sterowania -->
+			<section
+				class="flex flex-col sm:flex-row justify-between items-center mb-4 gap-2"
+			>
+				<div class="flex gap-2">
+					<select id="filterStatus" class="border rounded p-2">
+						<option value="">Wszystkie statusy</option>
+						<option value="ok">OK</option>
+						<option value="do_zamówienia">Do zamówienia</option>
+						<option value="wyprzedaż">Wyprzedaż</option>
+					</select>
+					<button id="resetFilter" class="bg-gray-200 rounded px-3 py-2">
+						Resetuj
+					</button>
+				</div>
+				<button
+					id="btnAdd"
+					class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow"
+				>
+					➕ Dodaj towar
+				</button>
+			</section>
+
+			<!-- Tabela towarów -->
+			<section class="overflow-x-auto bg-white shadow rounded">
+				<table class="w-full text-left border-collapse">
+					<thead class="bg-gray-100">
+						<tr>
+							<th class="p-2 border-b">Nazwa</th>
+							<th class="p-2 border-b">Ilość</th>
+							<th class="p-2 border-b">Min. ilość</th>
+							<th class="p-2 border-b">Kategoria</th>
+							<th class="p-2 border-b">Lokalizacja</th>
+							<th class="p-2 border-b">Status</th>
+							<th class="p-2 border-b">Akcje</th>
+						</tr>
+					</thead>
+					<tbody id="productTable">
+						<!-- Wiersze z JS -->
+					</tbody>
+				</table>
+			</section>
+			<!-- Formularz dodawania/edycji towaru --><!-- Modal - formularz -->
+			<div
+				id="modalForm"
+				class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+			>
+				<div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+					<h2 class="text-xl font-bold mb-4">Dodaj nowy towar</h2>
+
+					<form id="formAdd" class="space-y-4">
+						<!-- Nazwa -->
+						<div>
+							<label for="nazwa" class="block font-medium">Nazwa towaru</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								required
+								class="w-full border p-2 rounded"
+							/>
+						</div>
+
+						<!-- Ilość -->
+						<div>
+							<label for="ilosc" class="block font-medium">Ilość</label>
+							<input
+								type="number"
+								id="amount"
+								name="amount"
+								min="0"
+								required
+								class="w-full border p-2 rounded"
+							/>
+						</div>
+
+						<!-- Minimalna ilość -->
+						<div>
+							<label for="minIlosc" class="block font-medium"
+								>Minimalna ilość</label
+							>
+							<input
+								type="number"
+								id="minAmount"
+								name="minIlosc"
+								min="0"
+								required
+								class="w-full border p-2 rounded"
+							/>
+						</div>
+
+						<!-- Kategoria -->
+						<div>
+							<label for="kategoria" class="block font-medium">Kategoria</label>
+							<input
+								type="text"
+								id="category"
+								name="category"
+								required
+								class="w-full border p-2 rounded"
+							/>
+						</div>
+
+						<!-- Lokalizacja -->
+						<div>
+							<label for="lokalizacja" class="block font-medium"
+								>Lokalizacja</label
+							>
+							<input
+								type="text"
+								id="localization"
+								name="localization"
+								required
+								class="w-full border p-2 rounded"
+							/>
+						</div>
+
+						<!-- Przycisk -->
+						<div class="flex justify-between">
+							<button
+								id="btnSave"
+								type="submit"
+								class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+							>
+								Zapisz
+							</button>
+							<button
+								type="button"
+								id="btnClose"
+								class="text-gray-600 hover:text-black"
+							>
+								Anuluj
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<!-- Stopka -->
+		<footer class="text-center text-sm text-gray-500 mt-10 mb-4">
+			&copy; 2025 Aplikacja Magazynowa – wersja 0.1
+		</footer>
+	</body>
+</html>
